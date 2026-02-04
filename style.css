@@ -1,0 +1,66 @@
+h1{ 
+    text-align: center;
+    color: #af6f4c;
+    font-family: 'Arial', sans-serif;
+}
+button{
+    display: block;
+    margin: 20px auto;
+    padding: 10px 20px;
+    font-size: 1.2rem;
+    background-color: #af6f4c;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+button:hover{
+    background-color: #8c5a3a;
+}
+
+label {
+    font-size: 1.2rem;
+    margin-right: 10px;
+    font-family: 'Arial', sans-serif; 
+    color: #af6f4c;  
+    align-items: center;
+    justify-content: center;
+
+}
+
+input[type="number"] {
+    width: 60px;
+    padding: 5px;
+    font-size: 1rem;
+    border: 2px solid #af6f4c;
+    border-radius: 5px;
+
+}
+.emoji-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 30px;
+    padding: 20px;
+    max-width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.emoji-item {
+    font-size: 3rem;
+    animation: zigzag 0.6s ease-in-out;
+}
+
+@keyframes zigzag {
+    0% { transform: translateX(-30px) translateY(0); opacity: 0; }
+    25% { transform: translateX(30px) translateY(-15px); }
+    50% { transform: translateX(-30px) translateY(-30px); }
+    75% { transform: translateX(30px) translateY(-15px); }
+    100% { transform: translateX(0) translateY(0); opacity: 1; }
+}
+
+body {
+    background-color: #d5d4d2;
+}
